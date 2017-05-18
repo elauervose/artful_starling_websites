@@ -129,9 +129,9 @@ a.myfooter i {
 }
 
 #technology div.col-md-3.parallaxbox {
-    /*background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid (255, 255, 255, 0.5);*/
-    /*box-shadow: 0 1px 1px rgba(0,0,0,.1);*/
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid (255, 255, 255, 0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
     padding-top: 2em;
     padding-left: 20px;
     padding-right: 2`0px;
@@ -155,10 +155,6 @@ a.myfooter i {
 #home-key.title-block h1 {
   font-weight: 500;
 }
-
-
-
-
 
 
  i#key-icon {
@@ -200,6 +196,9 @@ Colors: base color default= #1ABC9C;
 
 Color Changes
 ========================================= */
+.color {
+    color: #10C7C7 !important;
+}
 
 .bgcolor, .bgcolor #header-wrap {
     background-color: #10C7C7 !important;
@@ -239,6 +238,10 @@ a {
 .portfolio-desc h3 a:hover {
     color: #10C7C7;
 }
+div#portfolio article:hover .portfolio-desc h3 a, div#portfolio article:hover .portfolio-desc p span a {
+    color: #10C7C7;
+}
+
 
 /* Portfolio Styles
 ========================================= */
@@ -271,11 +274,6 @@ a {
     line-height: 1.4;
     font-size: 14px;
 }
-
-/*#content p {
-    line-height: 1.4;
-}*/
-/**/
 
 
 

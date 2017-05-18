@@ -1,0 +1,102 @@
+---
+layout: default
+---
+<main class="l-content" itemprop="mainContentOfPage">
+
+	<section class="l-section wpb_row height_medium">
+		<div class="l-section-h i-cf">
+			<div class="g-cols type_default valign_top">
+				<div class="vc_col-sm-12 wpb_column vc_column_container">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+							<div class="w-video ratio_16x9">
+								<div class="w-video-h">
+									{{ page.iframe }}
+								</div>
+							</div>
+							<div class="w-separator type_invisible size_medium thick_1 style_solid color_border cont_none">
+								<span class="w-separator-h">
+								</span>
+							</div>
+							<div class="g-cols wpb_row type_default valign_top vc_inner">
+								<div class="vc_col-sm-8 wpb_column vc_column_container">
+									<div class="vc_column-inner">
+										<div class="wpb_wrapper">
+											<div class="wpb_text_column">
+
+												{{ content }}
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vc_col-sm-4 wpb_column vc_column_container">
+									<div class="vc_column-inner">
+										<div class="wpb_wrapper">
+											<div class="wpb_text_column">
+												<div class="wpb_wrapper">
+													<h3>Project Details</h3>
+													<ul>
+														<li>
+															<strong>Client:</strong> {{ page.client }}
+														</li>
+														<li>
+															<strong>Date:</strong> {{ page.project_date }}
+														</li>
+														<li>
+															<strong>Category:</strong> {{ page.category }}
+														</li>
+														<li>
+															<strong>Website:</strong><a href="http://{{ page.website }}" target="_blank"> {{ page.website }}</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-separator type_invisible size_large thick_1 style_solid color_border cont_none">
+								<span class="w-separator-h">
+								</span>
+							</div>
+							<div class="w-separator type_default size_medium thick_1 style_solid color_border cont_text">
+								<span class="w-separator-h">
+									<h5>Similar Projects</h5>
+								</span>
+							</div>
+
+							<div class="w-portfolio type_grid style_1 cols_3 align_center ratio_3x2 with_indents">
+
+									<div class="w-portfolio-list">
+
+										{% for portfolio in site.portfolio_project limit:3 %}
+
+											<div class="w-portfolio-item {{ portfolio.category }} size_1x1" data-id="{{ portfolio.data_id }}" data-categories="{{ portfolio.category }}">
+												<a class="w-portfolio-item-anchor" href=" {{ portfolio.url }}">
+													<div class="w-portfolio-item-image" style="background-image: url(/img/demo/{{ portfolio.image_thumb }})">
+														<img src="/img/demo/{{ portfolio.image_thumb }}" width="600" height="400" alt="{{ portfolio.title }}" />
+													</div>
+													<div class="w-portfolio-item-meta">
+														<div class="w-portfolio-item-meta-h">
+															<h2 class="w-portfolio-item-title">{{ portfolio.title }}</h2>
+															<span class="w-portfolio-item-text">{{ portfolio.category }}</span>
+															<span class="w-portfolio-item-arrow"></span>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										{% endfor %}
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>

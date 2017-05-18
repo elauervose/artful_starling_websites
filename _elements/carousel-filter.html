@@ -1,0 +1,146 @@
+---
+layout: page
+---
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<div id="project-terms">
+						<a data-filter="all" class="active" href="#">all</a>
+						<a data-filter="3d" href="#">3d</a>
+						<a data-filter="drawings" href="#">drawing</a>
+						<a data-filter="flash" href="#">flash</a>
+						<a data-filter="websites" href="#">website</a>
+					</div>
+
+					<div id="projects-carousel" class="owl-carousel image-carousel carousel-widget" data-margin="20" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+
+							<div class="project 3d">
+								<h2>3d</h2>
+								<a href="#"><img src="images/portfolio/4/4-1.jpg" alt="Image 1"></a>
+							</div>
+							<div class="project websites">
+								<h2>website</h2>
+								<a href="#"><img src="images/portfolio/4/6-1.jpg" alt="Image 2"></a>
+							</div>
+							<div class="project 3d">
+								<h2>3d</h2>
+								<a href="#"><img src="images/portfolio/4/6-2.jpg" alt="Image 3"></a>
+							</div>
+							<div class="project flash">
+								<h2>flash</h2>
+								<a href="#"><img src="images/portfolio/4/6-3.jpg" alt="Image 4"></a>
+							</div>
+							<div class="project 3d">
+								<h2>3d</h2>
+								<a href="#"><img src="images/portfolio/4/9-1.jpg" alt="Image 5"></a>
+							</div>
+							<div class="project drawing">
+								<h2>drawing</h2>
+								<a href="#"><img src="images/portfolio/4/9-2.jpg" alt="Image 6"></a>
+							</div>
+							<div class="project 3d">
+								<h2>3d</h2>
+								<a href="#"><img src="images/portfolio/4/12-1.jpg" alt="Image 7"></a>
+							</div>
+
+					</div>
+
+					<div id="projects-hidden" class="hide"></div>
+
+			   </div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function($) {
+
+			function showProjectsbyCat( cat ){
+
+				if ( cat == 'all'){
+
+					$('#projects-hidden .project').each(function(){
+
+						var elem = $(this).parent().html(),
+							targetPos = $(this).parent().index();
+
+						ocPortfolio.trigger( 'add.owl.carousel', [elem, targetPos] );
+
+					});
+
+				} else{
+
+					$('#projects-hidden .project.'+ cat).each(function(){
+
+						var elem = $(this).parent().html(),
+							targetPos = $(this).parent().index();
+
+						ocPortfolio.trigger( 'add.owl.carousel', [elem, targetPos] );
+
+					});
+
+					$('#projects-carousel .project:not(.project.'+ cat + ')').each(function(){
+
+						$(this).attr('data-pos', targetPos);
+
+						var elem = $(this).parent().html(),
+							targetPos = $(this).index();
+
+						$( elem ).clone().appendTo( $('#projects-hidden') );
+						ocPortfolio.trigger( 'remove.owl.carousel', targetPos );
+
+					});
+
+				}
+
+			}
+
+
+			$('#project-terms a').click(function(e){
+				e.preventDefault();
+				$('#project-terms a').removeClass('active');
+
+				cat = $(this).attr('data-filter');
+				$(this).addClass('active');
+				showProjectsbyCat( cat );
+			});
+
+		});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+---
+layout: page
+title: 'Schouvi Style'
+category: 'Web Development'
+tag: 'Web Development, Branding, Integrations'
+data_id: 103
+meta_description: ''
+image_thumb: 'style-thumb.png'
+image_thumb_alt: 'Schouvi Stylist home page'
+client: 'Schouvi Stylist'
+website: 'schouvistylist.com/'
+project_date: "May 15, 2017"
+technology: 'Sinatra'
+
+short_description: 'This website is a new project created for Schouvi, a hair and makeup artist launching her stylist business, "Schouvi Style". This simple, one-page site utilizes a creative photo gallery theme that highlights her rich, vibrant photography. The project is done in Sinatra and virtually all the content is dynamically generated via an API call to her Instagram feed.'
+
+description: ""
+
+---
+
+
+<div class="container clearfix topmargin-lg">
+
+  <!-- Content -->
+  <div class="tabs tabs-alt clearfix" id="tab-7">
+
+    <ul class="tab-nav clearfix">
+      <li><a href="#description">Project Description</a></li>
+      <li><a href="#discovery">Discovery and Planning</a></li>
+      <li class="hidden-phone"><a href="#integration">Integrations</a></li>
+    </ul>
+
+    <div id="project-details" class="tab-container">
+
+      <!-- START: Description  -->
+      <div class="tab-content clearfix" id="description">
+        <div class="col-md-12 nobottommargin fleft">
+          <div class="fancy-title title-dotted-border topmargin">
+            <h2>Project Info:</h2>
+          </div>
+          <div class="col-md-6">
+
+            <p>
+              This website is a new project created for Schouvi, a hair and makeup artist launching her stylist business, "Schouvi Style". This simple, one-page site utilizes a creative photo gallery theme that highlights her rich, vibrant photography. The project is done in <a href="http://www.sinatrarb.com/">Sinatra</a> a <a href="https://en.wikipedia.org/wiki/Sinatra_(software)">small and flexible open source framework written in Ruby</a> which enabled her site to make API calls to her business's Instagram feed so that virtually all content is dynamically generated using Schouvi's most current work.
+            </p>
+
+            <!-- Portfolio Meta: Description -->
+            <div class="title-block" style="width: 50%;">
+              <ul class="portfolio-meta nobottommargin">
+                <li><span><i class="icon-calendar3"></i>Completed on:</span> {{ page.project_date }}</li>
+                <li><span><i class="icon-lightbulb"></i>Technology:</span>{{ page.technology }}</li>
+                <li><span><i class="icon-link"></i>Client:</span> <a href="{{ page.website }}">{{ page.client }}</a></li>
+              </ul>
+            </div><!-- END Portfolio Meta: Description -->
+          </div>
+          <div class="col-md-6">
+            <article class="portfolio-item clearfix">
+              <div class="portfolio-image">
+                <a href="#">
+                  <img src="/img/style/style-home.png" alt="Open Imagination">
+                </a>
+                <div class="portfolio-overlay">
+                  <a href="/img/style/style-home.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="divider divider-center"><i class="icon-circle"></i></div>
+      </div>
+      <!-- END: Description  -->
+
+
+      <!-- START: Discovery -->
+      <div class="tab-content clearfix" id="discovery">
+        <div class="col-md-12 nobottommargin fleft">
+          <div class="fancy-title title-dotted-border topmargin">
+            <h3>Project Discovery and Planning:</h3>
+          </div>
+          <p>
+            Schouvi had a strong Instagram presence but no website prior to this so we began by discussing the style and personality she wanted to convey to potential clients. We also did an informal discovery process to identify the type of content and general organization she wanted to present. Because, as a stylist, she spends a lot of time with clients, we decided early on that content updates for her site needed to be fast, easy, and mobile-capable.
+          </p>
+          <div class="col-md-6" style="padding-left: 0px;">
+            <p>
+              We explored a variety of website content types and layouts and quickly realized that because her services are so uniquely tailored to each client, it didn't make sense to post services and pricing in a static format on her site. Instead, we decided to let her work speak for itself and direct clients to contact her for further information.  Since she was already using Instagram heavily to share images of her work, it was an obvious choice to create an <a href="http://schouvistylist.com/"></a>Instagram photo gallery</a>.
+            </p>
+            <p>
+              Once we had identified the best strategy for presenting her content, I created a mock-up of the site design and a short video highlighting features and functionality.
+            </p>
+          </div>
+          <div class="col-md-6">
+
+            <article class="portfolio-item pf-media pf-icons clearfix">
+              <div class="portfolio-image">
+                <iframe width="550" height="350" src="https://www.youtube.com/embed/jILfrval0DI" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </article>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="divider divider-center"><i class="icon-circle"></i></div>
+      </div>
+      <!-- END: Discovery  -->
+
+
+      <!-- START: Integrations  -->
+      <div class="tab-content clearfix" id="integration">
+
+        <div class="col-md-12 nobottommargin fleft">
+          <div class="fancy-title title-dotted-border topmargin">
+            <h2>Project Integrations:</h2>
+          </div>
+          <p>
+            Because, as a stylist, she spends a lot of time with clients, we decided early on that content updates for her site needed to be fast, easy, and mobile-capable. Since she was already using Instagram heavily to share images of her work, it was an obvious choice to create an <a href="http://schouvistylist.com/"></a>Instagram photo gallery</a>.
+          </p>
+
+          <!-- Portfolio Instagram: Description -->
+          <div class="col-md-5 bottommargin-sm">
+            <div class="fancy-title title-border-color title-right">
+              <h4>Dynamic <span>Instagram</span> Gallery</h4>
+            </div>
+            <div class="portfolio-desc">
+              <p>
+                A key feature of this integration is the filters displayed to the left in desktop views and at the top right in mobile views. These filters can be clicked to display only images matching that filter criteria.
+              </p>
+              <p>
+                The filters themselves are dynamically generated using key hashtags such as "short cuts", "color repair", and "full color". This ensures that the filters in use will always have at least one current photo to display.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 bottommargin-sm clearfix" style="padding-left: 0px; padding-right: 0px;">
+            <div class="col-md-7" style="padding-left: 0px; padding-right: 0px;">
+              <article class="portfolio-item clearfix" style="padding-left: 0px;">
+                <div class="portfolio-image">
+                  <a href="#">
+                    <img src="/img/style/style-home.png" alt="Open Imagination">
+                  </a>
+                  <div class="portfolio-overlay">
+                    <a href="/img/style/style-home.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item clearfix" style="padding-left: 0px;">
+                <div class="portfolio-image">
+                  <a href="#">
+                    <img src="/img/style/style-gallery-view.png" alt="Gallery Lightbox View">
+                  </a>
+                  <div class="portfolio-overlay">
+                    <a href="/img/style/style-gallery-view.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                  </div>
+                </div>
+              </article>
+              <article class="portfolio-item clearfix" style="padding-left: 0px;">
+                <div class="portfolio-image">
+                  <a href="#">
+                    <img src="/img/style/style-filter.png" alt="Gallery Filters to view images">
+                  </a>
+                  <div class="portfolio-overlay">
+                    <a href="/img/style/style-filter.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-5" style="padding-left: 0px; padding-right: 0px;">
+              <article class="portfolio-item clearfix" style="padding-left: 0px; padding-right: 0px;">
+                <div class="portfolio-image">
+                  <a href="#">
+                    <img src="/img/style/style-mobile-view.png" alt="Mobile View of Gallery Image Filters">
+                  </a>
+                  <div class="portfolio-overlay">
+                    <a href="/img/style/style-mobile-view.png" class="left-icon" data-lightbox="image" alt="Mobile View of Gallery Image Filters"><i class="icon-line-plus"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- END Portfolio Instagram: Description -->
+
+
+          <div class="clear"></div>
+          <div class="divider divider-center"><i class="icon-circle"></i></div>
+        </div>
+      </div>
+      <!-- END: Integrations   -->
+
+    </div>
+  </div>
+  <!-- End Content -->
+
+</div>
+
+
+<!-- *****
+
+Schouvi Stylist:
+=====================
+Short Description:
+  This website is a new project created for Schouvi, a hair and makeup artist launching her stylist business, "Schouvi Style". This simple, one-page site utilizes a creative photo gallery theme that highlights her rich, vibrant photography. The project is done in Sinatra and virtually all the content is dynamically generated via an API call to her Instagram feed.
+
+Description:
+  This website is a new project created for Schouvi, a hair and makeup artist launching her stylist business, "Schouvi Style". This simple, one-page site utilizes a creative photo gallery theme that highlights her rich, vibrant photography. The project is done in <a href="http://www.sinatrarb.com/">Sinatra</a>a <a href="https://en.wikipedia.org/wiki/Sinatra_(software)">small and flexible open source framework written in Ruby</a> which enabled her site to make API calls to her business's Instagram feed so that virtually all content is dynamically generated using Schouvi's most current work.
+
+Discovery & Planning:
+  Schouvi had a strong Instagram presence but no website prior to this so we began by discussing the style and personality she wanted to convey to potential clients. We also did an informal discovery process to identify the type of content and general organization she wanted to present. Because, as a stylist, she spends a lot of time with clients, we decided early on that content updates for her site needed to be fast, easy, and mobile-capable.
+
+  We explored a variety of website content types and layouts and quickly realized that because her services are so uniquely tailored to each client, it didn't make sense to post services and pricing in a static format on her site. Instead, we decided to let her work speak for itself and direct clients to contact her for further information.  Since she was already using Instagram heavily to share images of her work, it was an obvious choice to create an <a href="http://schouvistylist.com/"></a>Instagram photo gallery</a>.
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jILfrval0DI" frameborder="0" allowfullscreen></iframe>
+
+Instagram Integration:
+  Because, as a stylist, she spends a lot of time with clients, we decided early on that content updates for her site needed to be fast, easy, and mobile-capable. Since she was already using Instagram heavily to share images of her work, it was an obvious choice to create an <a href="http://schouvistylist.com/"></a>Instagram photo gallery</a>.
+
+  A key feature of this integration is the filters displayed to the left in desktop views and at the top right in mobile views. These filters can be clicked to display only images matching that filter criteria.
+  The filters themselves are dynamically generated using key hashtags such as "short cuts", "color repair", and "full color". This ensures that the filters in use will always have at least one current photo to display.
+
+Search Engine Optimization (SEO):
+  I added Google Analytics to her site and included all relevant information about her site in Google's webmaster tools to ensure that data is being collected about how clients find the site and how they use it once they get there.
+ -->
+
+
+
+

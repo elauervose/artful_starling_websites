@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+      {% include header.html %}
+      {% include home-slider.html %}
+      <section id="content">
+        <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
+
+        <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
+        {{ content }}
+
+      </section>
+
+
+      {% include footer.html %}
+
+      <div id="fixy" style="background-color: #fff; min-height: 150px; width: 100%; z-index: 1; fill: #fff; position: absolute; transform: translateY(-130px);">
+
+      </div>
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+    <script type="text/javascript" src="/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="/js/functions.js"></script>
+
+   </body>
+ </html>

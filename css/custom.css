@@ -1,0 +1,416 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+
+/* Helper Classes
+========================================= */
+
+.topmargin-md {
+  margin-top: 40px !important;
+}
+
+.bottommargin-md {
+  margin-bottom: 40px !important;
+}
+
+.clear-bottommargin-md {
+  margin-bottom: -40px !important;
+}
+
+
+/* Header & Logo Styles
+========================================= */
+
+/*#logo img {
+  padding: 10%;
+}
+*/
+
+
+/*  FOOTER
+========================================= */
+
+a.myfooter {
+    text-decoration: none !important;
+    color: #555;
+    font-size: 1.2em;
+    /*padding-left: 10px;*/
+}
+
+a.myfooter i {
+  font-size: 1.25em;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+/*  index page styles
+========================================= */
+
+.slider-caption .slider-caption-line1 {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: -80px;
+}
+.slider-caption .slider-caption-line2 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.slider-caption .slider-caption-line3 {
+    font-size: 1.75em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /*color: white;*/
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.slider-caption .slider-caption-line3 span {
+  font-weight: 600;
+  text-shadow: 1px 1px 0 rgba(13, 192, 192, .4);
+}
+.slider-caption .slider-caption-line4 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.slider-caption, .nivo-caption, .flex-caption {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 20;
+    max-width: 100%;
+    color: #EEE;
+    font-size: 22px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    -webkit-transition: top .3s ease;
+    -o-transition: top .3s ease;
+    transition: top .3s ease;
+}
+
+.slider-overlay {
+  background-color: rgba(0,0,0, 0.3);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #fff;
+}
+
+.promo > span, .promo > .container > span {
+    display: block;
+    color: #444;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 6px;
+}
+.button.button-dark:hover {
+    background-color: #E75C39;
+}
+
+#technology div.col-md-3.parallaxbox {
+    /*background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid (255, 255, 255, 0.5);*/
+    /*box-shadow: 0 1px 1px rgba(0,0,0,.1);*/
+    padding-top: 2em;
+    padding-left: 20px;
+    padding-right: 2`0px;
+    padding-bottom: 10px;
+    margin: 10px;
+    min-height: 280px;
+}
+
+
+#home-key.title-block {
+    padding: 0 20px 0 0;
+    border-right: 3px solid #0dc0c0;
+    border-left: none;
+    padding-top: 40%;
+    padding-right: 30px;
+    padding-bottom: 75%;
+    padding-left: 0px;
+    margin-right: 20px;
+}
+
+#home-key.title-block h1 {
+  font-weight: 500;
+}
+
+
+
+
+
+
+ i#key-icon {
+   -webkit-transform: rotate(100deg);
+   -moz-transform: rotate(100deg);
+   -ms-transform: rotate(100deg);
+   -o-transform: rotate(100deg);
+   transform: rotate(100deg);
+ }
+
+ div.heading-block span.italic {
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+ }
+
+ div.heading-block span.regular {
+  font-weight: 400;
+  max-width: 900px;
+ }
+
+ #portfolio article img {
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 350px;
+  min-height: 345px;
+ }
+
+ /*.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+     color: #fff;
+ }*/
+
+
+/* =========================================
+
+Colors: base color default= #1ABC9C;
+        New theme color: #10C7C7; | rgba (13, 192, 192, 1);
+
+Color Changes
+========================================= */
+
+.bgcolor, .bgcolor #header-wrap {
+    background-color: #10C7C7 !important;
+}
+
+.button {
+  background-color: #10C7C7;
+}
+
+#primary-menu ul li:hover > a, #primary-menu ul li.current > a {
+    color: #10C7C7;
+}
+
+.feature-box.fbox-plain .fbox-icon i, .feature-box.fbox-plain .fbox-icon img {
+  color: #10C7C7;
+}
+
+h1 > span:not(.nocolor), h2 > span:not(.nocolor), h3 > span:not(.nocolor), h4 > span:not(.nocolor), h5 > span:not(.nocolor), h6 > span:not(.nocolor) {
+    color: #10C7C7;
+}
+
+.fancy-title.title-bottom-border h1, .fancy-title.title-bottom-border h2, .fancy-title.title-bottom-border h3, .fancy-title.title-bottom-border h4, .fancy-title.title-bottom-border h5, .fancy-title.title-bottom-border h6 {
+    border-bottom: 2px solid #10C7C7;
+}
+
+a {
+    text-decoration: none !important;
+    color: #10C7C7;
+}
+
+.title-block {
+    padding: 2px 0 3px 20px;
+    border-left: 5px solid #10C7C7;
+    margin-bottom: 30px;
+}
+
+.portfolio-desc h3 a:hover {
+    color: #10C7C7;
+}
+
+/* Portfolio Styles
+========================================= */
+
+@media (max-width: 991px){
+  .portfolio .portfolio-item {
+      width: 33.33333333%;
+  }
+}
+
+
+.portfolio-meta li span {
+    /*display: inline-block;*/
+    width: auto;
+    padding-right: 10px;
+    /*font-weight: bold;
+    color: #333;*/
+}
+
+.portfolio-notitle .portfolio-desc {
+  height: 100px;
+}
+
+.portfolio-full.portfolio-notitle .portfolio-desc, .portfolio-nomargin.portfolio-notitle .portfolio-desc {
+  bottom: -80px;
+  border-bottom: 0;
+}
+
+#portfolio div.portfolio-desc p {
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+/*#content p {
+    line-height: 1.4;
+}*/
+/**/
+
+
+
+#tab-7 p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+#project-details.tab-container .portfolio-item {
+    /*float: left;*/
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 12px 12px 20px;
+}
+
+div#dtedl-logo-slider.slider-wrap {
+  border: 2px solid #F5F5F5;
+  padding: 5px;
+  /*margin-bottom: 5px;*/
+  /*background-color: #F5F5F5;*/
+}
+
+ol.flex-control-nav.flex-control-thumbs {
+  margin-top: 10px;
+}
+
+.flex-control-nav.flex-control-thumbs li {
+    margin: 0 6px 2px 0;
+    border: 2px solid #F5F5F5;
+    padding: 5px;
+}
+
+/*.overlay {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 47%;
+  height: 29%;
+}
+
+.overlay .overlay-wrap,
+.text-overlay {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}*/
+
+/* Contact Page Styles
+========================================= */
+
+.contact-page.feature-box.fbox-plain .fbox-icon i {
+    font-size: 35px;
+    line-height: 1 !important;
+}
+
+
+/* ABOUT Page Styles
+========================================= */
+
+.values {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+li.values-description {
+  margin-bottom: 10px;
+}
+ul.values-description {
+  margin-top: 0px;
+}
+
+
+/* BLOG Page Styles
+========================================= */
+
+
+div.blog.container.clearfix {
+    margin-right: 5%;
+    margin-left: 8%;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 85%;
+}
+
+.sidebar {
+
+}
+
+#sidebarsidebar.sidebar.nobottommargin.col_last.clearfix {
+  padding-left: 50px;
+  width: 23%;
+  border-left: 1px solid #F5F5F5;
+}
+.entry-meta2 {
+  list-style: none;
+}
+
+.entry-meta2 li:before {
+    content: '';
+    display: block;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.entry-meta2 li {
+    float: none;
+    font-size: 13px;
+    line-height: 14px;
+    margin: 0 10px 15px 0;
+    color: #999;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+}
+.entry-meta2 li a:hover {
+    color: #10C7C7;
+}
+
+div#post-list-footer ul.entry-meta2 li {
+  margin-bottom: 15px;
+}
+
+div#post-list-footer ul.entry-meta2 i {
+  display: inline-block;
+
+}
+
+.spost .entry-title h4:hover a, .spost .entry-title h4:hover i {
+    color:  #10C7C7;
+}
+.spost .entry-title h4 i {
+    color: #333;
+}
+.breadcrumb li:hover, .breadcrumb a:hover, .breadcrumb li.active  {
+    color: #10C7C7;
+}

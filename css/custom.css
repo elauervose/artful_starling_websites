@@ -25,10 +25,16 @@
 /* Header & Logo Styles
 ========================================= */
 
-/*#logo img {
-  padding: 10%;
+@media (max-width: 991px){
+  #logo img {
+    padding-left: 30%;
+  }
+  body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a {
+    color: #10C7C7!important;
+  }
 }
-*/
+
+
 
 
 /*  FOOTER
@@ -46,7 +52,26 @@ a.myfooter i {
   margin-right: 10px;
   margin-top: 10px;
 }
+#copyrights div.col-md-3 div.clearfix {
+  float: left;
+  margin-top: 10px;
+}
 
+
+@media (max-width: 767px) {
+  a.myfooter {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  #copyrights div.col-md-3 div.clearfix {
+    float: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}
 
 /*  index page styles
 ========================================= */
@@ -333,6 +358,57 @@ ol.flex-control-nav.flex-control-thumbs {
 }
 
 
+div#contact .contact-page.feature-box.fbox-plain .fbox-icon i {
+    padding-left: 30px;
+}
+
+section#google-map {
+  padding-left: 50px;
+}
+
+@media (max-width: 1000px) {
+
+  section#google-map {
+    padding-top: 50px;
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  div#contact.container.clearfix {
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  div#contact.container {
+    width: 360px!important;
+  }
+
+  div#contact .col_half .feature-box div.fbox-icon {
+    width: 20px;
+  }
+
+  div#contact .col_half .feature-box h3 {
+    font-size: 1em;
+    padding-left: 10px;
+  }
+
+  div#contact .contact-page.feature-box.fbox-plain .fbox-icon i {
+      font-size: 2em;
+      line-height: 1.25!important;
+      padding-left: 15px;
+  }
+
+  div#contact .contact-page.feature-box.fbox-plain.bottommargin-sm {
+    position: relative;
+        margin-top: 20px;
+        padding: 0 0 0 40px;
+  }
+}
+
+
 /* ABOUT Page Styles
 ========================================= */
 
@@ -347,6 +423,8 @@ li.values-description {
 ul.values-description {
   margin-top: 0px;
 }
+
+
 
 
 /* BLOG Page Styles
@@ -411,4 +489,34 @@ div#post-list-footer ul.entry-meta2 i {
 }
 .breadcrumb li:hover, .breadcrumb a:hover, .breadcrumb li.active  {
     color: #10C7C7;
+}
+
+
+/* PROJECT Page Styles
+========================================= */
+
+@media (max-width: 767px) {
+  #page-title h1 {
+      line-height: 1.5;
+      font-size: 1.25em;
+  }
+  #tabs-7 {
+
+  }
+  .toggle.toggle-bg .togglec {
+      padding: 12px 0 0 0;
+  }
+  .portfolio-item {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 0 50px 0;
+  }
+  div.fslider {
+    margin-bottom: 4em;
+  }
+  div.togglet.toggleta {
+    margin-bottom: 2em;
+  }
 }

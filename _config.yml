@@ -24,6 +24,7 @@ markdown: kramdown
 
 #add a folder for pages to live in
 include: ["_pages", "_portfolio", "_blog", "_elements" ]
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 
 # permalink: /:path/:title/
 

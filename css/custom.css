@@ -220,8 +220,22 @@ a.myfooter i {
   #portfolio article {
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
+
+  .portfolio-full.portfolio-notitle:not(.portfolio-1) .portfolio-desc {
+      bottom: 0;
+      border-bottom: 0;
+      padding-top: 5px;
+  }
+
+  .portfolio-desc span a {
+    color: #10C7C7;
+  }
+  .portfolio-desc h3 a {
+    color: #10C7C7;
+  }
+
 }
 
 @media (max-width: 479px) {
@@ -231,6 +245,8 @@ a.myfooter i {
     margin-bottom: 5%;
   }
 }
+
+
 
 /* =========================================
 

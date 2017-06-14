@@ -1,6 +1,9 @@
 require 'rack/jekyll'
 run Rack::Jekyll.new
 
+# enable compression
+use Rack::Deflater
+
 # static configuration (file path matches request path)
 require 'rack/contrib/try_static'
 use Rack::TryStatic,

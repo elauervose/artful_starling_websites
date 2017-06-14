@@ -21,6 +21,18 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-paginate-v2
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - config.ru
+  - Procfile
+  - READMD.md
+  - vendor
+
 
 #add a folder for pages to live in
 include: ["_pages", "_portfolio", "_blog", "_elements" ]

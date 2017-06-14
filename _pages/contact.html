@@ -10,7 +10,7 @@ category: ''
 
      <!-- Contact Info
     ============================================= -->
-    <div class="col_half">
+    <div class="col-md-6">
       <div class="fancy-title title-bottom-border bottommargin-md">
         <h2>Contact <span>Information</span></h2>
       </div>
@@ -32,14 +32,14 @@ category: ''
         <div class="fbox-icon">
           <a href="#"><i class="icon-email2"></i></a>
         </div>
-        <h3 style="padding-top: 10px;">Location: <span style="text-transform: none;"><a href="mailto:erica@artfulstarlingwebsites.com">erica@artfulstarlingwebsites.com</a></span></h3>
+        <h3 style="padding-top: 10px;">Email: <span style="text-transform: none;"><a href="mailto:erica@artfulstarlingwebsites.com">erica@artfulstarlingwebsites.com</a></span></h3>
       </div>
 
     </div><!-- Contact Form End -->
 
     <!-- Google Map
     ============================================= -->
-    <div class="col_half col_last">
+    <!-- <div class="col_half col_last">
       <style type="text/css">
         .map-container {
           width: 100%;
@@ -63,17 +63,59 @@ category: ''
         </div>
       </section>
 
-    </div><!-- Google Map End -->
+    </div> --><!-- Google Map End -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $('.map-container')
         .click(function(){
             $(this).find('iframe').addClass('clicked')})
         .mouseleave(function(){
             $(this).find('iframe').removeClass('clicked')});
     </script>
-    <div class="clear"></div>
+    <div class="clear"></div> -->
+
+     <!--  </div>
+
+    </div> -->
+
+
+    <!-- Google Map
+    ============================================= -->
+    <div class="col-md-6 bottommargin">
+
+      <section id="google-map" class="gmap" style="height: 500px;"></section>
+
+    </div><!-- Google Map End -->
 
   </div>
 
 </div>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAm3UdKFTRFVWkTyaysvQrDmT2fyP31iyQ"></script>
+
+<script type="text/javascript" src="js/jquery.gmap.js"></script>
+
+<script type="text/javascript">
+
+  $('#google-map').gMap({
+
+     address: 'Portland, Oregon',
+     maptype: 'ROADMAP',
+     zoom: 14,
+     markers: [
+      {
+        address: "Portland, Oregon"
+      }
+     ],
+     doubleclickzoom: false,
+     controls: {
+       panControl: true,
+       zoomControl: true,
+       mapTypeControl: true,
+       scaleControl: false,
+       streetViewControl: false,
+       overviewMapControl: false
+     }
+
+  });
+
+</script>

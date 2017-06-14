@@ -1,5 +1,4 @@
-require 'rack/jekyll'
-run Rack::Jekyll.new
+require 'rack'
 
 # enable compression
 use Rack::Deflater
